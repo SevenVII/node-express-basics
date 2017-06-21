@@ -2,6 +2,11 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet/less', href='/stylesheets/style.less')
+    script(type='text/javascript', src='/javascripts/less.js')
+    script(type='text/javascript').
+        var myVar = 'Hello Var';
+        console.log(myVar);
   body
     block content
+    p HIIII
